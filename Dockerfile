@@ -17,7 +17,7 @@ RUN mvn -B -q clean package -DskipTests
 # ------------------------
 # Stage 2: Runtime image
 # ------------------------
-FROM eclipse-temurin:25.0.1_8-jre
+FROM eclipse-temurin:25.0.2_10-jre
 
 # Create a non-root user
 RUN useradd -r -u 1001 appuser
